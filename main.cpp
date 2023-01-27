@@ -7,7 +7,7 @@ using namespace std;
 bool IsKPeriodic(string arr, int k)
 {
 	int size = arr.size();
-	if (k <= 0 || k > size || arr.size()%k !=0) {  //кратность меньше 0 или кратность больше длины строки или длина строки не кратна числу К
+	if (k <= 0 || k > size || arr.size()%k != 0) {  	//кратность меньше 0 или кратность больше длины строки или длина строки не кратна числу К
 		return false;
 	}
 
@@ -16,7 +16,7 @@ bool IsKPeriodic(string arr, int k)
 		int i = j;
 		for (i; i < size / k; i++) {
 			//cout << "итерация "<< i << endl;
-			if (arr[i] != arr[i + k]) {						//если первые К символов не равны следующим К символам возвращем false
+			if (arr[i] != arr[i + k]) {		   		//если первые К символов не равны следующим К символам возвращем false
 				//cout << arr[i] << arr[i + k] << endl;
 				return false;
 			}
